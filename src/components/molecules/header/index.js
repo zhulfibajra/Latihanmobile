@@ -2,7 +2,7 @@ import { View, Text, StyleSheet } from 'react-native'
 import React from 'react'
 import { IconBackDrak } from '../../../assets'
 import { Button, Gap } from '../../atoms'
-import { colors } from '../../../utils'
+import { colors, fonts } from '../../../utils'
 
 const Header = ({onPress, title}) => {
   return (
@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         flex: 1,
         fontSize: 20,
-        fontFamily: 'Nunito-SemiBold',
+        fontFamily: fonts.primary[600],
         color: colors.text.primary,
     }
 
